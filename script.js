@@ -34,6 +34,7 @@ function stopButton() {
     clearInterval(countdown);
     htmlMin.innerHTML = "00";
     htmlSec.innerHTML = "00";
+    document.title = "pomodoro timer";
 }
 
 // start button
