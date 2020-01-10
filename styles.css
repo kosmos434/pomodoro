@@ -1,0 +1,68 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+
+html {
+    height: 100%;
+}
+
+body {
+    background: url(back.png);
+    font-family: 'Lobster', serif;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pom {
+    background-color: rgba(192, 192, 192, 0.5);
+    border: double black 4px;
+    border-radius: 10px;
+    margin: 10% 20%;
+}
+
+
+.pom li {
+    font-family: monospace;
+    text-align: left;
+}
+
+.clock {
+    color: whitesmoke;
+    display: flex;
+    font-size: 4rem;
+    justify-content: center;
+    margin: 0 auto;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+        0px 8px 13px rgba(0, 0, 0, 0.1),
+        0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+.button-box {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btnStrt {
+    background-color: #77b255;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 10px 40px;
+    border-radius: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+        0px 8px 13px rgba(0, 0, 0, 0.1),
+        0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+.btnStp {
+    background-color: #dd2e44;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 10px 40px;
+    border-radius: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+        0px 8px 13px rgba(0, 0, 0, 0.1),
+        0px 18px 23px rgba(0, 0, 0, 0.1);
+}
