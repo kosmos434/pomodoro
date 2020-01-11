@@ -1,5 +1,5 @@
 ## Screenie
-![Screenshot_2020-01-10 24 44](https://user-images.githubusercontent.com/53918109/72193509-79a00b00-33cf-11ea-9155-ed11562ec77c.png)
+![Screenshot_2020-01-11 24 32](https://user-images.githubusercontent.com/53918109/72211432-ce578a80-3490-11ea-9a4c-f81034f76397.png)
 ## About
 This was made as part of the curriculum for `The Odin Project`.
 The purpose is to get a greater familiarity with JavaScript.
