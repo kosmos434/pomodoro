@@ -17,6 +17,7 @@ body {
     border: double black 4px;
     border-radius: 10px;
     margin: 10% 20%;
+    max-width: 500px;
 }
 
 

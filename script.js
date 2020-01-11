@@ -1,21 +1,27 @@
 // TODO 
-// max-width for divs
-// pause
+//// max-width for divs
+// pause?
 // set time amounts
+// sound notification?
+//// minute padding
+//// time's up title
+//// object design pattern for declarations
 
 
-let sec
-  , currentMin
-  , currentSec
-  , countdown
-  , htmlMin = document.getElementById("minutes")
-  , htmlSec = document.getElementById("seconds")
-  , twentyfive = true
-  , five = false
-  ;
+let sec, currentMin, currentSec, countdown;
 
 
-function pomTimer () {
+let switchNum = {
+    twentyfive: true,
+    five: false
+};
+
+let page = {
+    htmlMin: document.getElementById("minutes"),
+    htmlSec: document.getElementById("seconds")
+};
+
+function pomTimer() {
     if (sec >= 0) { // stop condition
         currentMin = Math.floor(sec / 60);
         currentSec = sec % 60;
@@ -25,10 +31,20 @@ function pomTimer () {
             currentSec = `0${currentSec}`;
         }
 
+        // padding zero at the front of minutes
+        if (currentMin.toString().length === 1) {
+            currentMin = `0${currentMin}`;
+        }
 
-        htmlMin.innerHTML = currentMin;
-        htmlSec.innerHTML = currentSec;
+
+        page.htmlMin.innerHTML = currentMin;
+        page.htmlSec.innerHTML = currentSec;
         document.title = `${currentMin}:${currentSec}`;
+
+        // time's up notification
+        if (sec < 1) {
+            document.title = "⏰";
+        }
 
         sec--;
     }
@@ -38,23 +54,23 @@ function pomTimer () {
 // stop and reset time to "00:00"
 function stopButton() {
     clearInterval(countdown);
-    htmlMin.innerHTML = "00";
-    htmlSec.innerHTML = "00";
+    page.htmlMin.innerHTML = "00";
+    page.htmlSec.innerHTML = "00";
     document.title = "pomodoro timer";
 }
 
 // start button
 function startButton() {
     clearInterval(countdown);
-    if (twentyfive == true) { // for 25 minutes
+    if (switchNum.twentyfive == true) { // for 25 minutes
         sec = 1500;
         countdown = setInterval(pomTimer, 1000);
-        twentyfive = false;
-        five = true;
-    } else if (twentyfive == false) { // press start again for 5
-        sec = 300;
+        switchNum.twentyfive = false;
+        switchNum.five = true;
+    } else if (switchNum.twentyfive == false) { // press start again for 5
+        sec = 10;
         countdown = setInterval(pomTimer, 1000);
-        twentyfive = true;
-        five = false
+        switchNum.twentyfive = true;
+        switchNum.five = false
     }
 }
