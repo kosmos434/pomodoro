@@ -1,3 +1,9 @@
+// TODO 
+// max-width for divs
+// pause
+// set time amounts
+
+
 let sec
   , currentMin
   , currentSec
