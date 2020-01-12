@@ -2,13 +2,15 @@
 //// max-width for divs
 // pause?
 // set time amounts
-// sound notification?
+//// sound notification?
 //// minute padding
 //// time's up title
 //// object design pattern for declarations
 
 
 let sec, currentMin, currentSec, countdown;
+
+let ringer = new Audio("P4-affection-medium.mp3")
 
 
 let switchNum = {
@@ -44,6 +46,7 @@ function pomTimer() {
         // time's up notification
         if (sec < 1) {
             document.title = "⏰";
+            ringer.play();
         }
 
         sec--;
@@ -68,7 +71,7 @@ function startButton() {
         switchNum.twentyfive = false;
         switchNum.five = true;
     } else if (switchNum.twentyfive == false) { // press start again for 5
-        sec = 300;
+        sec = 10;
         countdown = setInterval(pomTimer, 1000);
         switchNum.twentyfive = true;
         switchNum.five = false
