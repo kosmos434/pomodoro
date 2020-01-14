@@ -10,7 +10,7 @@
 
 let sec, currentMin, currentSec, countdown;
 
-let ringer = new Audio("P4-affection-medium.mp3")
+let ringer = new Audio("chime.mp3")
 
 
 let switchNum = {
@@ -71,7 +71,7 @@ function startButton() {
         switchNum.twentyfive = false;
         switchNum.five = true;
     } else if (switchNum.twentyfive == false) { // press start again for 5
-        sec = 10;
+        sec = 300;
         countdown = setInterval(pomTimer, 1000);
         switchNum.twentyfive = true;
         switchNum.five = false

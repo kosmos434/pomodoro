@@ -1,1 +1,1 @@
-<?php include_once("index.html"); // for heroku ?>
+<?php include_once("index.html"); ?>
