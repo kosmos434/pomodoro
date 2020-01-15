@@ -66,12 +66,12 @@ function stopButton() {
 function startButton() {
     clearInterval(countdown);
     if (switchNum.twentyfive == true) { // for 25 minutes
-        sec = 1500;
+        sec = 3000;
         countdown = setInterval(pomTimer, 1000);
         switchNum.twentyfive = false;
         switchNum.five = true;
     } else if (switchNum.twentyfive == false) { // press start again for 5
-        sec = 300;
+        sec = 600;
         countdown = setInterval(pomTimer, 1000);
         switchNum.twentyfive = true;
         switchNum.five = false
