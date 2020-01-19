@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    background: url(back.png);
+    background: url(icons/back.png);
     font-family: 'Lobster', serif;
     height: 100%;
     margin: 0 auto;
