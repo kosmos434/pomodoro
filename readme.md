@@ -12,8 +12,6 @@ https://www.theodinproject.com/courses/web-development-101/lessons/pairing-proje
 https://arcane-caverns-61164.herokuapp.com/
 ```
 
-<<<<<<< HEAD
+
 ###### 🍅
-=======
-###### tomato emoji 🍅
->>>>>>> 8beaea840d6cd81fb19abbddd39b7595ddb728b3
+
